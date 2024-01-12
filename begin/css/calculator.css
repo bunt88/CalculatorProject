@@ -10,8 +10,16 @@ body {
 }
 .wrapper {
     width: 400px;
-    border: 3px red;
+    border: 3px solid red;
+    background-color: black;
+    color: white;
 }
 .calc-button-row {
-    border: 3px blue;
+    border: 3px solid blue;
+}
+.screen {
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px 5px;
+  font-size: 40px;
 }
