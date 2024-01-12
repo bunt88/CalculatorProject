@@ -10,16 +10,49 @@ body {
 }
 .wrapper {
     width: 400px;
-    border: 3px solid red;
     background-color: black;
     color: white;
 }
 .calc-button-row {
-    border: 3px solid blue;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
 }
 .screen {
   text-align: right;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px 5px;
   font-size: 40px;
+}
+.calc-button {
+    background-color: #d8d9db;
+    color: #000000;
+    border: none;
+    font-size: 40px;
+    /* Jen suggested using padding instead of height*/
+    height: 100px;
+    flex-basis: 24.5%;
+    border-radius: 25px;
+    
+}
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+.double {
+    flex-basis: 49.7%;
+}
+.triple {
+    flex-basis: 74.8%;
+}
+/*could use a class and add to all of the needed buttons*/
+.calc-button:last-child {
+    background-color: #df974c;
+    color:white;
+}
+.calc-button:last-child:hover {
+    background-color: #dfb07e;
 }
